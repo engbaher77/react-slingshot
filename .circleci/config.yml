@@ -19,7 +19,7 @@ jobs:
       - checkout
       #- run: npm i
       - restore_cache:
-          keys
+          keys:
             - "npm_packages"
       - run: npm run test
   analyze:
